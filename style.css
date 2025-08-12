@@ -1,0 +1,68 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #faf4ed;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: #d87d6c;
+    margin-bottom: 30px;
+}
+
+
+.bulb-card {
+    background: white;
+    width: 260px;  
+    height: auto; 
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.bulb-card img {
+    width: 180px;
+    height: auto;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.btn-group button {
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+
+.btn-on {
+    background-color: #2e8b57;
+}
+.btn-on:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.btn-off {
+    background-color: #e74c3c;
+}
+.btn-off:hover {
+    transform: scale(1.0);
+    opacity: 0.9;
+}

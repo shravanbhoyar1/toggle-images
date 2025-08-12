@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On Off</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="heading">Bulb On Off</h1>
+
+    <div class="bulb-card">
+        <img src="./bulb-off.jpg" alt="Bulb" id="bulb">
+        <div class="btn-group">
+            <button class="btn-off" onclick="turnOff()">OFF</button>
+            <button class="btn-on" onclick="turnOn()">ON</button>
+        </div>
+    </div>
+
+    <script>
+        const bulbElement = document.getElementById("bulb");
+
+        function turnOn() {
+            bulbElement.src = 'bulb-on.jpg';
+        }
+
+        function turnOff() {
+            bulbElement.src = 'bulb-off.jpg';
+        }
+    </script>
+</body>
+</html>
