@@ -6,11 +6,11 @@
     <title>Bulb On Off</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
 
-    <h1 class="heading">Bulb On Off</h1>
+    <h1 class="heading" id="heading">Bulb On Off</h1>
 
-    <div class="bulb-card">
+    <div class="bulb-card" id="card">
         <img src="./bulb-off.jpg" alt="Bulb" id="bulb">
         <div class="btn-group">
             <button class="btn-off" onclick="turnOff()">OFF</button>
@@ -20,13 +20,21 @@
 
     <script>
         const bulbElement = document.getElementById("bulb");
+        const bodyElement = document.getElementById("body");
+        const cardElement = document.getElementById("card");
+        const headingElement = document.getElementById("heading");
 
         function turnOn() {
             bulbElement.src = 'bulb-on.jpg';
+            bodyElement.style.backgroundColor = "#cce6ff";
+            headingElement.style.color="#004d99";
         }
 
         function turnOff() {
             bulbElement.src = 'bulb-off.jpg';
+            bodyElement.style.backgroundColor = "#4d4d4d";
+            headingElement.style.color="#ffffff";
+
         }
     </script>
 </body>
