@@ -13,8 +13,7 @@
     <div class="bulb-card" id="card">
         <img src="./bulb-off.jpg" alt="Bulb" id="bulb">
         <div class="btn-group">
-            <button class="btn-off" onclick="turnOff()">OFF</button>
-            <button class="btn-on" onclick="turnOn()">ON</button>
+            <button class="btn-off" onclick="toggle()" id="btn">ON</button>
         </div>
     </div>
 
@@ -23,18 +22,26 @@
         const bodyElement = document.getElementById("body");
         const cardElement = document.getElementById("card");
         const headingElement = document.getElementById("heading");
+        const buttonElement = document.getElementById("btn");
 
-        function turnOn() {
+        let isOn = false;
+
+        function toggle(){
+            isOn =!isOn;
+
+        if(isOn)
+        {
             bulbElement.src = 'bulb-on.jpg';
             bodyElement.style.backgroundColor = "#cce6ff";
             headingElement.style.color="#004d99";
-        }
-
-        function turnOff() {
+            buttonElement.innerText="OFF";
+        }else
+        {
             bulbElement.src = 'bulb-off.jpg';
             bodyElement.style.backgroundColor = "#4d4d4d";
             headingElement.style.color="#ffffff";
-
+            buttonElement.innerText="ON";
+        }
         }
     </script>
 </body>
