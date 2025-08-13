@@ -13,4 +13,5 @@ This is a simple **JavaScript** program that turns a bulb *on* and *off* when a 
 3. JavaScript
 
 #OUTPUT
-()
+(<img width="1047" height="902" alt="image" src="https://github.com/user-attachments/assets/93bb9b35-6a4f-4f58-99ce-1cfd1af2f048" />
+)
